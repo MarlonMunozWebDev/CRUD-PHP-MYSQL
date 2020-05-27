@@ -1,0 +1,18 @@
+
+          /*<!--DATO ES UNA VARIABLE LOCAL CREADA NUEVA-->
+          <?php  foreach($resultado as $dato): ?>
+          <!--alert-php echo$dato['color']-->
+          <div class="alert alert-primary text-uppercase" role="alert">
+            <?php echo $dato['producto']?>
+
+            / PRECIO =
+            <?php echo $dato['descripcion']?>
+
+            <a href="eliminar.php?id=<?php echo $dato['id'] ?>" class="float-right ml-2"><img src="eliminar.png" alt="" style="height:2rem"></a>
+
+            <!--ICONO EDITAR Y MANDA EL ID DEL ELEMENTO SELECIONADO-->
+            <a href="index.php?id=<?php echo $dato['id'] ?>" class="float-right"> <img src="editar.png" alt="" style="height:2rem"> </a>
+          </div>
+
+        <!--AQUI TERMINA EL RECORRIDO DEL ARREGLO Y EL DIV SE REPETIRA POR CADA ARREGLO-->
+        <?php  endforeach ?> */
